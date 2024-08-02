@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML elements</title>
+    <link rel="stylesheet" href="siteCSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/mdsitelogonobg.png">
+</head>    
+<body style="height: 100%;">
+    <header id="header"><iframe src="Header.html" id="headeriframe" frameborder="0"></iframe>
+    </header>
+    <nav id="nav"><div id="content" onclick="iframeshow()">&equiv;</div><iframe src="Navigation.html" frameborder="0" width="100%" height="30px"></iframe></nav>
+    <iframe src="Links(iFrame content).html" id="iframe" frameborder="0" class="iframenoshow"></iframe>
+    
+    <section id="section">
+        <h1>HTML elements</h1>
+        <div id="prext"><a href="What is HTML.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Creating your first web page.html"><div class="prext">Next&gt;</div></div></a>
+            
+        <p>HTML uses some elements to show something on a web page. These elements are called tags. There are mainly two types of tags in HTML:<br><br>
+            <b>Container tags:</b> As the name suggests, thses tags contain some data inside themselves. These come in pairs so they are also called double tags. <br>
+                    EX.html tags(&lt;html&gt;...&lt;\html&gt;),paragraph tags(&lt;p&gt;...&lt;\p&gt;)</p>
+        <p>
+            <b>Empty tags:</b> These tags come with a single tag. That's why they are called single tags also. They don't contain any data but take them only as their attributes. <br>
+                    EX.br tag(&lt;br&gt;), img tag(&lt;img&gt;)
+        </p>
+        
+        <p>
+            Tags also use attributes which help the programmer to input further data into the tags. Some of these attributes are common for every tag like bgcolor and color, while some attributes are exclusive for a specific tag like alt in img tag. <br>
+            Some tags are optional like align for paragraph and heading tags while some attributes are mandatory in order to make them work like src in img tag.
+        </p>
+        <br>
+        <br>
+        <p>We will learn all about these tags and attributes in upcoming chapters.</p>
+        
+        <div id="prext"><a href="What is HTML.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Creating your first web page.html"><div class="prext">Next&gt;</div></div></a>
+    </section>
+    <script src="SiteScript.js"></script>
+</body>
+</html>

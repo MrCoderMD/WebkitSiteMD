@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+    <link rel="stylesheet" href="siteCSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/mdsitelogonobg.png">
+</head>
+<body>
+    <header id="header">
+        <iframe src="Header.html" id="headeriframe" frameborder="0"></iframe>
+    </header>
+    <nav id="nav"><div id="content" onclick="iframeshow()">&equiv;</div><iframe src="Navigation.html" frameborder="0" width="100%" height="30px"></iframe></nav>
+    <iframe src="Links(iFrame content).html" id="iframe" class="iframenoshow" frameborder="0"></iframe>
+    <section>
+        <h1>Image Mapping</h1>
+        <div id="prext"><a href="Images.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Lists.html"><div class="prext">Next&gt;</div></div></a>
+        <p>An image can be used just for the display as well as a link if it is inside an anchor tag.</p>
+        <p>But sometimes, we need an image to contain multiple links so that it will redirect us to diffent websites when clicked on its different parts. This can be achieved by Image Mapping.</p>
+        <img src="Images/MapExample.JPG" usemap="#map">
+        <map name="map">
+            <area shape="circle" coords="270,190,125" href="Flower.html" alt="">
+        </map>
+        <p>For image mapping, &lt;map&gt; tag is used. <br>An image is added using img tag and given a <b>usemap</b> attribute. Its value is a string after a # sign.</p>
+            <p class="codespace">&lt;img src="Images/MapExample.JPG" usemap="#map"&gt;</p>
+        <p>map tag is used with a <b>name</b> attribute which has the same value as the usemap without the # sign.</p>
+        <p>To mark the area to click we use an area tag. The area is marked by <b>shape</b> and <b>coords</b> attributes. The coordinates for the point are given from left and top in pixels. We can use following markings,</p>
+        <p><b>Circle:</b>It can mark circular areas. In coords, an X, a Y coordinate and a radius is given.
+            <p class="codespace">&lt;area shape="circle" coords="270,190,125" href="Flower.html"&gt;</p></p>
+        <p><b>Rect:</b>It can mark square and rectangular areas. In coords, its top-left and bottom-right corner coordinates are given. </p>
+            <p class="codespace">&lt;area shape="square" coords="50,350,450,350" onclick="alert('Thankyou')"&gt;</p>
+        <p><b>Poly:</b>It can be used to mark irregular shapes. The X&Y coordinates of each point of the area is entered as value.</p>
+            <p class="codespace">&lt;area shape="poly" coords="321,6,46,356,68,68,,342,65,8,523,3,523" href="Index.html"&gt;</p>
+        <p><b>Default:</b>It covers the entire picture.</p>
+        <p class="codespace">&lt;area shape="default"&gt;</p>
+        <p>The image map can also trigger javascript events. Try to click on the text on the image.</p>
+        <img src="Images/MapExample.JPG" usemap="#map2">
+        <map name="map2">
+            <area shape="rect" coords="50,300,450,350" onclick="alert('Thankyou')">
+        </map>
+        <div id="prext"><a href="Images.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Lists.html"><div class="prext">Next&gt;</div></div></a>
+    </section>
+    <script src="SiteScript.js"></script>
+</body>
+</html>

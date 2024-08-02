@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists</title>
+    <link rel="stylesheet" href="siteCSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/mdsitelogonobg.png">
+</head>
+<body>
+    <header id="header">
+        <iframe src="Header.html" id="headeriframe" frameborder="0"></iframe>
+    </header>
+    <nav id="nav"><div id="content" onclick="iframeshow()">&equiv;</div><iframe src="Navigation.html" frameborder="0" width="100%" height="30px"></iframe></nav>
+    <iframe src="Links(iFrame content).html" id="iframe" frameborder="0" class="iframenoshow"></iframe>
+    <section>
+        <h1>Lists</h1>
+        <div id="prext"><a href="ImageMap.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Tables.html"><div class="prext">Next&gt;</div></div></a>
+        <p>As the name says, this is used to make lists on the web page.</p>
+        <p>Mainly, there are three types of lists used in HTML,</p>
+        <p><b>Unordered Lists:</b>These lists don't have an order. It is generally used with those datas, whose order does not have any importance. Ex: Grocery List. <b>&lt;ul&gt;</b> tag is used for making unordered lists</p>
+        <img src="Images/NotepadUL.png" alt="Code of each type of unordered list" title="Code of each type of unordered list">
+        <img src="Images/ChromeUL.png" alt="Display of each type of unordered list" title="Display of each type of unordered list">
+        <p><b>Ordered Lists:</b>These lists have an order i.e. numbers or letters. These are generally used with those datas whose order matters. Ex:Steps involved in a process. <b>&lt;ol&gt;</b> tag is used for making ordered lists</p>
+        <img src="Images/NotepadOL.png" alt="Code of each type of ordered list" title="Code of each type of ordered list">
+        <img src="Images/ChromeOL.png" alt="Display of each type of ordered list" title="Display of each type of ordered list">
+        <p><b>Description Lists:</b>In these list, each element have a discription attached with it. These are not used as commonly as unordered or ordered lists. <b>&lt;dl&gt;</b> tag is used for making discription lists</p>
+        <img src="Images/NotepadDL.png" alt="Code of discription list" title="Code of discription list">
+        <img src="Images/ChromeDL.png" alt="Display of discription list" title="Display of discription list">
+        <p id="note">Each content of the list is placed within <b>&lt;li&gt;</b> tag</p>
+        <p>ul and ol tag use <b>type</b> attribute to define the display of the lists.</p>
+        <p id="note">The dl tag uses <b>dt</b> tag to display its content an <b>dd</b> tag to give discription of the given content.</p>
+        <div id="prext"><a href="ImageMap.html"><div class="prext">&lt;Previous</div></a>
+        <a href="Tables.html"><div class="prext">Next&gt;</div></div></a>
+    </section>
+    <script src="SiteScript.js"></script>
+</body>
+</html>

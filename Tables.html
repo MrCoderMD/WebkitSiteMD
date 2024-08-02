@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="siteCSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/mdsitelogonobg.png">
+</head>
+<body>
+    <header id="header">
+        <iframe src="Header.html" id="headeriframe" frameborder="0"></iframe>
+    </header>
+    <nav id="nav"><div id="content" onclick="iframeshow()">&equiv;</div><iframe src="Navigation.html" frameborder="0" width="100%" height="30px"></iframe></nav>
+    <iframe src="Links(iFrame content).html" id="iframe" frameborder="0" class="iframenoshow"></iframe>
+    <section>
+        <h1>Tables</h1>
+        <div id="prext"><a href="Lists.html"><div class="prext">&lt;Previous</div></a>
+        <a href=""><div class="prext">Next&gt;</div></div></a>
+        <p>Like lists, Table is also a way to display data in a mannered way.</p>
+        <p>But the key difference is, that while lists sho data in bullets or numberings, tables show data in form of rows and columns.</p>
+        <img src="Images/NotepadTable.png" alt="Code of tables" title="Code of tables">
+        <img src="Images/ChromeTable.png" alt="Display of tables" title="Display of tables">
+        <p>HTML gives us a lot of flexibility to make different types of tables.</p>
+        <h1>Initializing table</h1>
+        <p>To start making a table, we use &lt;table&gt; tag.</p>
+        <p class="codespace">&lt;table&gt;&lt;/table&gt;</p>
+        <h1>Making table rows</h1>
+        <p>To make table rows we use &lt;tr&gt; tag</p>
+        <p class="codespace">&lt;table&gt;&lt;tr&gt;&lt;/tr&gt;&lt;/table&gt;</p>
+        <p>&lt;tr&gt; creates a row in the table which will contain cells in it.</p>
+        <h1>creating table header and cells</h1>
+        <p>A table header is used to define the head of the column. It is just like a normal table cell but with bold text inside of it.</p>
+        <p>A &lt;th&gt; tag is used to crete a table header while a &lt;td&gt; tag is used to create a table cell.</p>
+        <p class="codespace">&lt;table&gt;<br>&lt;tr&gt;<br>&lt;th&gt;&lt;/th&gt;<br>&lt;th&gt;&lt;/th&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;&lt;/td&gt;<br>&lt;td&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+        <h1>borders, cellspacing and cellpadding</h1>
+        <p>To create a border, a <b>border</b> attribute is given with the table tag.</p>
+        <p class="codespace">&lt;table border='5px'&gt;&lt;/table&gt;</p>
+        <p id="note">The value for the border attribute should be a length.</p>
+        <p>Both cellpadding and cellspacing attributes are given to the table tag. Cellspacing defines the space between the cells in all directions while cellpadding defines space between cell content and cell border.</p>
+        <p class="codespace">&lt;table border="5px" cellspacing="10px" cellpadding="10px"&gt;<br>&lt;tr&gt;<br>&lt;th&gt;Head&lt;/th&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;cell&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+        <table style="margin: auto;" border="5px" cellspacing="10px" cellpadding="10px"><tr><th>Head</th></tr><tr><td>cell</td></tr></table>
+        <br>
+        <h1>colspan and rowspan</h1>
+        <p>Colspan and rowspan are scaling attributes used with table cells which scale a table cell with respect to other cells.</p>
+        <p>By default, a table cell takes a space of one colomn and one row, which can be considered a unit.</p>
+        <p>Both colspan and rowspan take a positive integer which decides how much space a cell will take in the direct in the direction of column or row.</p>
+        <p>For example if the value of colspan is 3, then the cell will take space equal to 3 cells and it will cover 3 columns.</p>
+        <p class="codespace">&lt;table border='1px'&gt;<br>&lt;tr&gt;&lt;td colspan='3'&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td rowspan='2'&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td colspan='2'&gt;cell&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;td&gt;cell&lt;/td&gt;&lt;/tr&gt;<br>&lt;tr&gt;&lt;td colspan='5'&gt;cell&lt;/td&gt;&lt;/tr&gt;<br>&lt;/table&gt;</p>
+        <table border="1px" style="margin: auto;"><tr>
+            <td colspan="3">cell</td>
+            <td>cell</td>
+            <td>cell</td>
+        </tr>
+        <tr>
+            <td rowspan="2">cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td colspan="2">cell</td>
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+        </tr>
+        <tr>
+            <td colspan="5">cell</td>
+        </tr></table>
+        <p id="note">In the example above, after giving the 1st cell of first row a colspan of 3, only 2 more cells could fil into the row as there was space for only 5 cells. Also the 1st cell in 2nd row takes space of 2 cell in row which means only max 4 cells can fit into 3rd row.</p>
+        <div id="prext"><a href="Lists.html"><div class="prext">&lt;Previous</div></a>
+        <a href=""><div class="prext">Next&gt;</div></div></a>
+    </section>
+    <script src="SiteScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="siteCSS.css">
+    <link rel="icon" type="image/x-icon" href="Images/mdsitelogonobg.png">
+    <style>
+        #prext{
+            justify-content: flex-end;
+        }
+    </style>
+</head>    
+<body style="height: 100%;">
+    <header id="header">
+        <iframe src="Header.html" id="headeriframe" frameborder="0"></iframe>
+    </header>
+    <nav id="nav"><div id="content" onclick="iframeshow()">&equiv;</div><iframe src="Navigation.html" frameborder="0" width="100%" height="30px"></iframe></nav>
+    <iframe src="Links(iFrame content).html" id="iframe" frameborder="0" class="iframenoshow"></iframe>
+       <section id="section">
+        <h1>What is HTML</h1>
+        <div id="prext"><a href="HTML elements.html"><div class="prext">Next&gt;</div></a></div>
+        <p>HTML is at the core of every web page. Behind every web page you've ever visited there is HTML code that your web page browser uses to display elememts like text, images and tables.</p>
+        <br><br>
+        <p>In this course, you'll work with HTML code to control the structure and the elements of a web page.</p>
+        <br><br>
+        <p>Web browsers read HTML documents (containing HTML code) to display the resulting web page.</p>
+        <br><br>
+        <p>An HTML document can include different <strong>elements</strong> such as  headings, paragraphs, images and tables. These elememts are defined using different <b>tags</b>.</p>
+        <br><br>
+        <p>HTML is based on tags. You can tell the web browser that you want to include a paragraph of text in your web page by enclosing the text in <b>paragraph tags &lt;p&gt;</b>.</p>
+        <a href="HTML elements.html"><div class="prext" style="float: right;">Next&gt;</div></a>
+    </section>
+</body>
+<script src="SiteScript.js"></script>
+</html>
