@@ -5,6 +5,28 @@
 body::-webkit-scrollbar{
     display: none;
 }
+
+@media screen and (orientation:landscape) {
+    section{
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        width: 80vw;
+    }
+
+    #iframe{
+        display: inline-block;
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        height: 100vh;
+        width: 20vw;
+    }
+
+    #content{
+        display: none;
+    }
+}
 /* Fixing the title iframe on the top so it dosen't move with the page */
 header{
     height: 50px;
@@ -17,10 +39,10 @@ header{
     left: 0;
 }
 /* Aligning navigation bar and main content to left side, leaving no gap*/
-nav,section{
+/* nav,section{
     position: absolute;
     left: 0;
-}
+} */
 /* To show the title in full width */
 #headeriframe{
     width: 100%;
@@ -43,6 +65,7 @@ nav{
     width: 100%;
     position: fixed;
     top: 50px;
+    left: 0;
 }
 
 #content{
@@ -56,11 +79,6 @@ nav{
 #content:hover{
     background-image: var(--signcolor);
     cursor: pointer;
-}
-
-section{
-    position: absolute;
-    top: 80px;
 }
 
 #prext{
@@ -78,10 +96,6 @@ section{
     border-radius: 10px;
     display: inline-block;
     color: white;
-}
-
-#iframe{
-    z-index: 99;
 }
 
 li{
@@ -105,6 +119,8 @@ ul{
 }
 section{
     margin:0%;
+    position: absolute;
+    top: 80px;
 }
 h1{
     text-transform: capitalize;
